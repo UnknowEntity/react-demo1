@@ -4,10 +4,10 @@ import Text from "../../atoms/text";
 import "./style.css";
 
 const InputFormVertical = (props) => {
-  const { text, value, onChange, type, disable } = props;
+  const { text, value, onChange, type, disable, classInput = "" } = props;
   return (
     <div className={"input-form-ver"}>
-      <Text content={`${text}:`} />
+      <Text content={`${text}:`} classText={`m ${classInput}`} />
       <InputText
         value={value}
         onChange={onChange}

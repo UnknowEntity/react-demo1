@@ -4,6 +4,8 @@ div.login-form {
   width: 100%;
 }
 
-div.login-form button {
+div.login-form .login-btn {
+  display: flex;
+  justify-content: center;
   margin-top: 15px;
 }

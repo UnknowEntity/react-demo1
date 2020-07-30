@@ -5,6 +5,10 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  font-weight: 500;
+  width: fit-content;
+  border-radius: 5px;
+  border-style: none;
 }
 
 button.color-red {
@@ -21,4 +25,9 @@ button.color-blue {
 
 button.color-gray {
   background-color: grey;
+}
+
+button.s-l {
+  height: 20%;
+  width: 30%;
 }

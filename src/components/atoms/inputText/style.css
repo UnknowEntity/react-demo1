@@ -1,7 +1,7 @@
 input {
   border-color: lightgray;
   width: 100%;
-  padding: 3px;
+  padding: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
   box-sizing: border-box;
@@ -10,18 +10,25 @@ input {
   border-style: solid;
 }
 
+input:focus {
+  border-color: green;
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+  transition: 0.1s;
+}
+
 input.error {
   border-color: red;
 }
 
 input.s-l {
-  height: 5%;
+  height: 5vh;
 }
 
 input.s-m {
-  height: 2.5%;
+  height: 2.5vh;
 }
 
 input.s-s {
-  height: 1.5%;
+  height: 1.5vh;
 }

@@ -14,14 +14,22 @@ const LoginForm = (props) => {
         text={"Username"}
         value={username}
         onChange={changeUsername}
+        classInput={"s-m"}
       />
       <InputFromVertical
         text={"Password"}
         value={password}
         onChange={changePassword}
         type={"password"}
+        classInput={"s-l"}
       />
-      <Button child={"Login"} onClick={onSubmit} classBtn={"color-green"} />
+      <div className={"login-btn"}>
+        <Button
+          child={"Login"}
+          onClick={onSubmit}
+          classBtn={"color-green s-l"}
+        />
+      </div>
     </div>
   );
 };

@@ -4,11 +4,16 @@ import Text from "../../atoms/text";
 import "./style.css";
 
 const InputFormHorizontal = (props) => {
-  const { text, value, onChange } = props;
+  const { text, value, onChange, type, disable } = props;
   return (
     <div className={"input-form-hor"}>
-      <Text content={`${text}:`} />
-      <InputText value={value} onChange={onChange} />
+      <Text content={`${text}:`} classText={"m"} />
+      <InputText
+        value={value}
+        onChange={onChange}
+        type={type}
+        disable={disable}
+      />
     </div>
   );
 };

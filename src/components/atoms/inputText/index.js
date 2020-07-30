@@ -2,7 +2,13 @@ import React from "react";
 import "./style.css";
 
 const FormText = (props) => {
-  const { value, onChange, type = "text", disable = false } = props;
+  const {
+    value,
+    onChange,
+    type = "text",
+    disable = false,
+    className = "",
+  } = props;
 
   return (
     <input
@@ -10,6 +16,7 @@ const FormText = (props) => {
       onChange={(e) => onChange(e.target.value)}
       type={type}
       disabled={disable}
+      className={className}
     />
   );
 };
