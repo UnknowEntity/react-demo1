@@ -1,0 +1,27 @@
+input {
+  border-color: lightgray;
+  width: 100%;
+  padding: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+input.error {
+  border-color: red;
+}
+
+input.s-l {
+  height: 5%;
+}
+
+input.s-m {
+  height: 2.5%;
+}
+
+input.s-s {
+  height: 1.5%;
+}
